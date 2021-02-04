@@ -5,9 +5,9 @@ from credit_card_validator import credit_card_validator
 
 
 class TestCredCardNumber(TestCase):
-    def test_prefix_range_american_express_1(self):
+    def test_prefix_range_american_express_2(self):
         for x in range(0, 100):
-            random_val = random.randint(340000000000000, 349999999999999)
+            random_val = random.randint(370000000000000, 379999999999999)
             subs_card = [int(d) for d in str(random_val)]
             cc_list = [str(i) for i in subs_card]
             cc_num = int("".join(cc_list))
